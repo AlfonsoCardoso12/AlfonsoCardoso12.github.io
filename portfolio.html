@@ -4,22 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      /* Estilo para la línea debajo de los enlaces */
+      ul {
+          list-style-type: none;
+          padding: 0;
+          display: none;
+      }
+
+      li {
+          display: inline-block;
+          margin: 10px;
+          width: 180px;
+      }
+
+      a {
+          display: block;
+          color: #2FC8E8;
+          text-decoration: none;
+          position: relative;
+          font-family: Poppins;
+          
+      }
+
+      a:after {
+          content: '';
+          position: absolute;
+          width: 50%;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          background-color: #2FC8E8;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s ease;
+      }
+
+      a:hover:after {
+          transform: scaleX(1);
+      }
+
+      /* Estilo para la cuadrícula 2x5 */
+      .grid-container {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 10px;
+          justify-items: center;
+          margin-top: 20px;
+      }
+
+      /* Estilo para el botón */
+      .toggleButton {
+          margin-top: 20px;
+          padding: 10px 15px;
+          background-color: #2FC8E8;
+          border: 20px;
+          border-radius: 10px;
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          font-family: Poppins;
+      }
+  </style>
 </head>
 <body style="background-color: black;">
   <div style="width: 1920px; height: 959px; position: relative; background: black">
     <div style="left: 683.50px; top: 87px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 60px; display: inline-flex">
       <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="index.html"style="color: white;">HOME</a></div>
-      <div><span style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="index.html"style="color: white;">PORTFOLIO</a></span><span style="color: #2FC8E8; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">.</span></div>
-      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="index.html"style="color: white;">SERVICES</a></div>
-      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="index.html"style="color: white;">CONTACT</a></div>
+      <div><span style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="portfolio.html"style="color: white;">PORTFOLIO</a></span></div>
+      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="services.html"style="color: white;">SERVICES</a></div>
+      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="contact.html"style="color: white;">CONTACT</a></div>
     </div>
-    <div style="width: 1920px; height: 5363px; left: 0px; top: 745px; position: absolute; background: black"></div>
-    <div style="width: 1556px; height: 5827px; left: 186px; top: 216px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 125px; display: inline-flex">
-      <div style="width: 1050px; height: 385px; position: relative">
-        <img style="width: 347px; height: 385px; left: 703px; top: 0px; position: absolute" src="https://via.placeholder.com/347x385" />
+    <div style="width: 1920px; height: 1827px; left: 4px; top: 739px; position: absolute; background: black"></div>
+    <div style="width: 1556px; height: 2288px; left: 186px; top: 216px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 125px; display: inline-flex">
+      <div style="width: 1050px; height: 385px; position: relative;">
+        <img style="width: 347px; height: 385px; left: 703px; top: 0px; position: absolute;" src="IMA3.jpeg" />
         <div style="width: 612px; height: 272px; left: 0px; top: 34px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
           <div style="width: 588px; height: 187px; position: relative">
-            <div style="width: 572px; height: 88px; left: 0px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Home Page</div>
+            <div style="width: 572px; height: 88px; left: 0px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">PORTFOLIO</div>
             <div style="left: 0px; top: 33px; position: absolute; color: white; font-size: 42px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Hello, it’s me</div>
             <div style="left: 0px; top: 79px; position: absolute"><span style="color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Ricardo Soares</span><span style="color: #2FC8E8; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">.</span></div>
           </div>
@@ -31,59 +93,68 @@
         <div style="width: 35.36px; height: 0px; left: 526px; top: 25px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
         <div style="width: 1052px; height: 30px; left: 0px; top: 57px; position: absolute; text-align: center"><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">“</span><span style="color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">In a world where anything is possible, one voice can make a difference.</span><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">”</span></div>
       </div>
-      <div style="width: 1050px; height: 647px; position: relative">
+      <div style="width: 612px; height: 439px; position: relative">
         <div style="width: 572px; height: 88px; left: 0px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">My Projects</div>
-        <div style="width: 242px; height: 0px; left: 0px; top: 0px; position: absolute; border: 2px #2FC8E8 solid"></div>
+        <div style="width: 242px; height: 0px; left: 0px; top: 0px; position: absolute; border: 2px #2FC8E8 solid"><section id="audio"> </div>
         <div style="left: 0px; top: 33px; position: absolute; color: white; font-size: 42px; font-family: Poppins; font-weight: 700; word-wrap: break-word">See my best selling project</div>
-        <div style="left: 0px; top: 79px; position: absolute"><span style="color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Name Surname</span><span style="color: #2FC8E8; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">.</span></div>
-        <div style="width: 612px; height: 152px; left: 0px; top: 187px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word">Lorem ipsum dolor sit amet consectetur. Enim pretium interdum neque eget ultrices aliquet urna nunc. Blandit ut phasellus mattis consectetur velit sed nunc. Odio praesent a morbi proin. Non faucibus nulla iaculis neque varius. Interdum duis dui sit in sem dui.</div>
-        <div style="width: 612px; height: 88px; left: 0px; top: 351px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word">Lorem ipsum dolor sit amet consectetur. Enim pretium interdum neque eget ultrices aliquet urna nunc. Blandit ut phasellus mattis consectetur velit sed nunc.</div>
-        <div style="width: 340px; height: 568px; left: 710px; top: 79px; position: absolute">
-          <img style="width: 332px; height: 332px; left: 8px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/332x332" />
-          <div style="width: 80.08px; height: 80.08px; left: 227px; top: 219.81px; position: absolute">
-            <div style="width: 80.08px; height: 80.08px; left: 0px; top: 0px; position: absolute; background: radial-gradient(39.16% 23.02% at 31.67% 15.06%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0) 100%); border-radius: 100px; backdrop-filter: blur(42px)"></div>
-            <div style="width: 26px; height: 31px; left: 30px; top: 24px; position: absolute; background: white"></div>
-          </div>
-          <div style="left: 8px; top: 342px; position: absolute; color: white; font-size: 32px; font-family: Poppins; font-weight: 700; word-wrap: break-word">ZOO</div>
-          <div style="width: 299px; height: 141px; left: 8px; top: 390px; position: absolute"><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">1</span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word"> The Flute Sond<br/></span><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">2</span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word"> Outlaw<br/></span><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">3</span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word"> Kill Them All<br/></span><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">4</span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word"> Missin You Crazy</span></div>
-          <div style="width: 335px; height: 175px; left: 0px; top: 393px; position: absolute; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52%, black 88%); border-radius: 15px"></div>
+        <div style="left: 0px; top: 79px; position: absolute"><span style="color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Ricardo Soares</span><span style="color: #2FC8E8; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">.</span></div>
+        <div style="width: 612px; height: 152px; left: 0px; top: 187px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word"> Book me! Allow me to use my
+           experience to bring your script to life and tell your story effectively. I know how to set up and record your script speedily, clearly and efficiently: I’ve been
+           recording voice overs and running my professional recording studio since the early 2000s.</div>
+        <div style="width: 612px; height: 152px; left: 0px; top: 320px; position: absolute;">
+         
+          
+          <audio id="audioPlayer" controls>
+            <source src="audio1.mp3" type="audio/mpeg">
+            <source src="audio2.mp3" type="audio/mpeg">
+            <source src="audio3.mp3" type="audio/mpeg">
+            <source src="audio4.mp3" type="audio/mpeg">
+            <source src="audio5.mp3" type="audio/mpeg">
+            <source src="audio6.mp3" type="audio/mpeg">
+            <source src="audio7.mp3" type="audio/mpeg">
+            <source src="audio8.mp3" type="audio/mpeg">
+            <source src="audio9.mp3" type="audio/mpeg">
+            <source src="audio10.mp3" type="audio/mpeg">
+         
+        </audio>
+        <br>
+        <button onclick="togglePlaylist()" class="toggleButton">Mostrar Lista</button>
+        <ul id="playlist">
+          <li><a href="#audio" onclick="changeAudio('audio1.mp3')">AUDIO 1</a></li>
+          <li><a href="#audio" onclick="changeAudio('audio2.mp3')">AUDIO 2</a></li>
+          <li><a href="#audio" onclick="changeAudio('audio3.mp3')">AUDIO 3</a></li>
+          <li><a href="#audio" onclick="changeAudio('audio4.mp3')">AUDIO 4</a></li>
+          <li><a href="#audio" onclick="changeAudio('audio5.mp3')">AUDIO 5</a></li>
+          <li><a href="#audio" onclick="changeAudio('audio6.mp3')">AUDIO 6</a></li>
+          <li><a href="#audio" onclick="changeAudio('audio7.mp3')">AUDIO 7</a></li>
+          <li><a href="#audio" onclick="changeAudio('audio8.mp3')">AUDIO 8</a></li>
+          <li><a href="#audio" onclick="changeAudio('audio9.mp3')">AUDIO 9</a></li>
+      </ul>
+    </section>
         </div>
-      </div>
-      <div style="width: 1050px; height: 631.08px; position: relative">
-        <img style="width: 332px; height: 332px; left: 0px; top: 187px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/332x332" />
-        <div style="width: 686px; height: 308px; left: 364px; top: 207px; position: absolute">
-          <div style="left: 0px; top: 0px; position: absolute"><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">1 </span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Cherry Hill</span></div>
-          <div style="left: 654px; top: 6px; position: absolute; color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">3:43</div>
-          <div style="left: 654px; top: 74px; position: absolute; color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">2:51</div>
-          <div style="left: 654px; top: 142px; position: absolute; color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">2:46</div>
-          <div style="left: 654px; top: 210px; position: absolute; color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">2:44</div>
-          <div style="left: 654px; top: 278px; position: absolute; color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">2:47</div>
-          <div style="width: 686px; height: 0px; left: 0px; top: 52px; position: absolute; border: 0.50px #2FC8E8 solid"></div>
-          <div style="width: 686px; height: 0px; left: 0px; top: 120px; position: absolute; border: 0.50px #2FC8E8 solid"></div>
-          <div style="width: 686px; height: 0px; left: 0px; top: 188px; position: absolute; border: 0.50px #2FC8E8 solid"></div>
-          <div style="width: 686px; height: 0px; left: 0px; top: 256px; position: absolute; border: 0.50px #2FC8E8 solid"></div>
-          <div style="left: 0px; top: 68px; position: absolute"><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">2 </span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">The Skateout</span></div>
-          <div style="left: 0px; top: 136px; position: absolute"><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">3 </span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">What They Want</span></div>
-          <div style="left: 0px; top: 204px; position: absolute"><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">4 </span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Me You</span></div>
-          <div style="left: 0px; top: 272px; position: absolute"><span style="color: #2FC8E8; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">5 </span><span style="color: white; font-size: 24px; font-family: Poppins; font-weight: 600; word-wrap: break-word">Do It Myself</span></div>
-        </div>
-        <div style="width: 686px; height: 344px; left: 364px; top: 187px; position: absolute; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, black 97%); border-radius: 15px"></div>
-        <div style="width: 572px; height: 88px; left: 0px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Albums</div>
-        <div style="width: 199px; height: 0px; left: 0px; top: 0px; position: absolute; border: 2px #2FC8E8 solid"></div>
-        <div style="left: 0px; top: 33px; position: absolute; color: white; font-size: 42px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Listen My Music</div>
-        <div style="left: 0px; top: 79px; position: absolute; color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">There´s Really a Wolf</div>
-        <div style="width: 80.08px; height: 80.08px; left: 0px; top: 551px; position: absolute">
-          <div style="width: 80.08px; height: 80.08px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 100px"></div>
-          <div style="width: 26px; height: 31px; left: 30px; top: 24px; position: absolute; background: black"></div>
-        </div>
-        <div style="width: 32px; height: 28px; left: 300px; top: 581px; position: absolute">
-          <div style="width: 32px; height: 28px; left: 0px; top: 0px; position: absolute; background: white"></div>
-        </div>
+      </audio>
+      <script>
+      function changeAudio(audioSrc) {
+            var audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.src = audioSrc;
+            audioPlayer.load();
+            audioPlayer.play();
+        }
+
+        function togglePlaylist() {
+            var playlist = document.getElementById('playlist');
+            if (playlist.style.display === 'none') {
+                playlist.style.display = 'block';
+            } else {
+                playlist.style.display = 'none';
+            }
+        }
+    </script>
       </div>
       <div style="width: 1052px; height: 87px; position: relative">
-        <div style="width: 35.36px; height: 0px; left: 501px; top: 25px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
-        <div style="width: 35.36px; height: 0px; left: 526px; top: 25px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
-        <div style="width: 1052px; height: 30px; left: 0px; top: 57px; position: absolute; text-align: center"><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">“</span><span style="color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">Behind every great story is a voice that brings it to life.</span><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">”</span></div>
+        <div style="width: 35.36px; height: 0px; left: 501px; top: 100px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
+        <div style="width: 35.36px; height: 0px; left: 526px; top: 100px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
+        <div style="width: 1052px; height: 30px; left: 0px; top: 140px; position: absolute; text-align: center"><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">“</span><span style="color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">Behind every great story is a voice that brings it to life.</span><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">”</span></div>
       </div>
       <div style="align-self: stretch; flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
         <div style="color: white; font-size: 32px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Voiceover Work</div>
@@ -98,108 +169,6 @@
         <div style="width: 35.36px; height: 0px; left: 501px; top: 25px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
         <div style="width: 35.36px; height: 0px; left: 526px; top: 25px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
         <div style="width: 1052px; height: 30px; left: 0px; top: 57px; position: absolute; text-align: center"><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">“</span><span style="color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">In the silence, a voice can be heard, echoing through eternity.</span><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">”</span></div>
-      </div>
-      <div style="width: 1050px; height: 640px; position: relative">
-        <div style="width: 572px; height: 88px; left: 0px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 76px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Gallery</div>
-        <div style="width: 299px; height: 0px; border: 2px #2FC8E8 solid"></div>
-        <div style="width: 1050px; height: 511px; left: 0px; top: 129px; position: absolute">
-          <img style="width: 243px; height: 243px; left: 0px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/243x243" />
-          <img style="width: 243px; height: 243px; left: 269px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/243x243" />
-          <img style="width: 243px; height: 243px; left: 538px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/243x243" />
-          <img style="width: 243px; height: 243px; left: 807px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/243x243" />
-          <img style="width: 243px; height: 243px; left: 0px; top: 268px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/243x243" />
-          <img style="width: 243px; height: 243px; left: 269px; top: 268px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/243x243" />
-          <img style="width: 243px; height: 243px; left: 538px; top: 268px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/243x243" />
-          <img style="width: 243px; height: 243px; left: 807px; top: 268px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/243x243" />
-        </div>
-        <div style="left: 0px; top: 34px; position: absolute; color: white; font-size: 42px; font-family: Poppins; font-weight: 700; word-wrap: break-word">See more projects</div>
-      </div>
-      <div style="width: 1052px; height: 87px; position: relative">
-        <div style="width: 35.36px; height: 0px; left: 501px; top: 25px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
-        <div style="width: 35.36px; height: 0px; left: 526px; top: 25px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; border: 1px #2FC8E8 solid"></div>
-        <div style="width: 1052px; height: 30px; left: 0px; top: 57px; position: absolute; text-align: center"><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">“</span><span style="color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">Sometimes, the greatest stories are told in whispers.</span><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">”</span></div>
-      </div>
-      <div style="width: 1280px; height: 658px; position: relative">
-        <div style="width: 572px; height: 88px; left: 116px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 76px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Videos</div>
-        <div style="width: 110px; height: 0px; left: 0px; top: 0px; position: absolute; border: 2px #2FC8E8 solid"></div>
-        <div style="left: 116px; top: 34px; position: absolute; color: white; font-size: 42px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Reels</div>
-        <div style="width: 1280px; height: 550px; padding-top: 21px; padding-bottom: 29px; padding-left: 116px; left: 0px; top: 108px; position: absolute; justify-content: flex-end; align-items: center; display: inline-flex">
-          <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
-            <div style="width: 300px; height: 500px; position: relative">
-              <img style="width: 300px; height: 500px; left: 0px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/300x500" />
-              <div style="width: 80.08px; height: 80.08px; left: 110px; top: 210px; position: absolute">
-                <div style="width: 80.08px; height: 80.08px; left: 0px; top: 0px; position: absolute; background: radial-gradient(39.16% 23.02% at 31.67% 15.06%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0) 100%); border-radius: 100px; backdrop-filter: blur(42px)"></div>
-                <div style="width: 26px; height: 31px; left: 30px; top: 24px; position: absolute; background: white"></div>
-              </div>
-            </div>
-            <div style="width: 300px; height: 500px; position: relative">
-              <img style="width: 300px; height: 500px; left: 0px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/300x500" />
-              <div style="width: 80.08px; height: 80.08px; left: 110px; top: 210px; position: absolute">
-                <div style="width: 80.08px; height: 80.08px; left: 0px; top: 0px; position: absolute; background: radial-gradient(39.16% 23.02% at 31.67% 15.06%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0) 100%); border-radius: 100px; backdrop-filter: blur(42px)"></div>
-                <div style="width: 26px; height: 31px; left: 30px; top: 24px; position: absolute; background: white"></div>
-              </div>
-            </div>
-            <div style="width: 300px; height: 500px; position: relative">
-              <img style="width: 300px; height: 500px; left: 0px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/300x500" />
-              <div style="width: 80.08px; height: 80.08px; left: 110px; top: 210px; position: absolute">
-                <div style="width: 80.08px; height: 80.08px; left: 0px; top: 0px; position: absolute; background: radial-gradient(39.16% 23.02% at 31.67% 15.06%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0) 100%); border-radius: 100px; backdrop-filter: blur(42px)"></div>
-                <div style="width: 26px; height: 31px; left: 30px; top: 24px; position: absolute; background: white"></div>
-              </div>
-            </div>
-            <div style="width: 300px; height: 500px; position: relative">
-              <img style="width: 300px; height: 500px; left: 0px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/300x500" />
-              <div style="width: 80.08px; height: 80.08px; left: 110px; top: 210px; position: absolute">
-                <div style="width: 80.08px; height: 80.08px; left: 0px; top: 0px; position: absolute; background: radial-gradient(39.16% 23.02% at 31.67% 15.06%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0) 100%); border-radius: 100px; backdrop-filter: blur(42px)"></div>
-                <div style="width: 26px; height: 31px; left: 30px; top: 24px; position: absolute; background: white"></div>
-              </div>
-            </div>
-            <div style="width: 300px; height: 500px; position: relative">
-              <img style="width: 300px; height: 500px; left: 0px; top: 0px; position: absolute; border-radius: 30px" src="https://via.placeholder.com/300x500" />
-              <div style="width: 80.08px; height: 80.08px; left: 110px; top: 210px; position: absolute">
-                <div style="width: 80.08px; height: 80.08px; left: 0px; top: 0px; position: absolute; background: radial-gradient(39.16% 23.02% at 31.67% 15.06%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0) 100%); border-radius: 100px; backdrop-filter: blur(42px)"></div>
-                <div style="width: 26px; height: 31px; left: 30px; top: 24px; position: absolute; background: white"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="width: 1050px; height: 719px; position: relative">
-        <div style="width: 1050px; height: 590px; left: 0px; top: 129px; position: absolute">
-          <img style="width: 1050px; height: 590px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/1050x590" />
-          <div style="width: 1050px; height: 590px; left: 0px; top: 0px; position: absolute">
-            <div style="width: 1050px; height: 96px; left: 1050px; top: 494px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.50) 100%)"></div>
-            <div style="width: 1050px; height: 96px; left: 1050px; top: 96px; position: absolute; transform: rotate(180deg); transform-origin: 0 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 100%)"></div>
-          </div>
-          <div style="width: 1028.16px; height: 38.04px; left: 9.84px; top: 551px; position: absolute">
-            <div style="width: 16px; height: 16px; left: 1002.16px; top: 13px; position: absolute; background: #EAEAEA; border: 0.50px rgba(0, 0, 0, 0.10) solid"></div>
-            <img style="width: 22px; height: 18px; left: 963.16px; top: 12px; position: absolute; border-radius: 1px; border: 0.50px rgba(0, 0, 0, 0.10) solid" src="https://via.placeholder.com/22x18" />
-            <img style="width: 20px; height: 14px; left: 928.16px; top: 14px; position: absolute; border: 0.50px rgba(0, 0, 0, 0.10) solid" src="https://via.placeholder.com/20x14" />
-            <div style="width: 20px; height: 16px; left: 895.16px; top: 13px; position: absolute">
-              <img style="width: 14.62px; height: 16px; left: 0px; top: 0px; position: absolute; border-radius: 1px; border: 0.50px rgba(0, 0, 0, 0.10) solid" src="https://via.placeholder.com/15x16" />
-              <div style="width: 13px; height: 9px; left: 7px; top: 0px; position: absolute; background: #EE1A26; border-radius: 1px"></div>
-              <div style="width: 9px; height: 5px; left: 9px; top: 2px; position: absolute; background: #F1F2F1; box-shadow: 0px 1px 0px #560A0F"></div>
-            </div>
-            <img style="width: 18px; height: 14px; left: 857.16px; top: 14px; position: absolute; border: 0.50px rgba(0, 0, 0, 0.10) solid" src="https://via.placeholder.com/18x14" />
-            <div style="left: 125.16px; top: 19.04px; position: absolute; color: #EAEAEA; font-size: 13px; font-family: Helvetica; font-weight: 400; letter-spacing: 0.13px; word-wrap: break-word">1:32 / 3:35</div>
-            <img style="width: 13.25px; height: 16px; left: 92.16px; top: 13px; position: absolute; border: 0.50px rgba(0, 0, 0, 0.10) solid" src="https://via.placeholder.com/13x16" />
-            <img style="width: 12px; height: 12px; left: 60.16px; top: 15px; position: absolute; border: 0.50px rgba(0, 0, 0, 0.10) solid" src="https://via.placeholder.com/12x12" />
-            <div style="width: 13px; height: 16px; left: 19.16px; top: 13px; position: absolute; background: #EAEAEA; border: 0.50px rgba(0, 0, 0, 0.10) solid"></div>
-            <div style="width: 1028.16px; height: 3px; left: 0px; top: 0px; position: absolute">
-              <div style="width: 1026px; height: 3px; left: 2.16px; top: 0px; position: absolute; background: rgba(234, 234, 234, 0.20)"></div>
-              <div style="width: 515.16px; height: 3px; left: 0px; top: 0px; position: absolute; background: rgba(234, 234, 234, 0.50)"></div>
-              <div style="width: 344.53px; height: 3px; left: 0px; top: 0px; position: absolute; background: #FC0D1C"></div>
-            </div>
-          </div>
-          <div style="width: 68px; height: 48px; left: 491px; top: 271px; position: absolute">
-            <div style="width: 68px; height: 48px; left: 0px; top: 0px; position: absolute; background: #FF0000"></div>
-            <div style="width: 18.37px; height: 19.18px; left: 26.98px; top: 13.67px; position: absolute; background: #EAEAEA"></div>
-          </div>
-          <div style="width: 982px; height: 27px; left: 16px; top: 14px; position: absolute; color: white; font-size: 18px; font-family: Helvetica; font-weight: 400; word-wrap: break-word">Russ - Satisfy (Official Video)</div>
-          <div style="width: 20px; height: 20px; left: 1014px; top: 14px; position: absolute; background: #EAEAEA; border: 0.50px rgba(0, 0, 0, 0.10) solid"></div>
-        </div>
-        <div style="width: 572px; height: 88px; left: 0px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 76px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Youtube</div>
-        <div style="width: 198px; height: 0px; left: 0px; top: 0px; position: absolute; border: 2px #2FC8E8 solid"></div>
-        <div style="left: 0px; top: 34px; position: absolute; color: white; font-size: 42px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Last song</div>
       </div>
     </div>
   </div>

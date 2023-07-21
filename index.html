@@ -10,24 +10,57 @@
 
 </head>
 <style>
+ a {
+          display: block;
+          color: #2FC8E8;
+          text-decoration: none;
+          position: relative;
+          font-family: Poppins;
+          
+      }
 
+      a:after {
+          content: '';
+          position: absolute;
+          width: 50%;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          background-color: #2FC8E8;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s ease;
+      }
+
+      a:hover:after {
+          transform: scaleX(1);
+      }
 </style>
 <script>
+  function redirigirPagina() {
+    if (window.innerWidth < 686) {
+      window.location.href = "pagina_alt1.html";
+    }
+  }
   
-
+  // Llama a la función al cargar la página
+  redirigirPagina();
+  
+  // Llama a la función cuando cambie el tamaño de la ventana
+  window.addEventListener('resize', redirigirPagina);
 </script>
 <body style="background-color: black;">
-  <div style="width: 1920px; height: 1004px; position: relative; background: black">
+  <div style="width: 1920px; height: 1004px; position: relative; background: black"id="contenido">
     <div style="left: 701.50px; top: 87px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 60px; display: inline-flex">
-      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="index.html"style="color: white;">HOME</a><span style="color: #2FC8E8; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word">.</span></div>
-      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="portfolio.html"style="color: white;">PORTFOLIO</a></div>
-      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="services.html"style="color: white;">SERVICES</a></div>
-      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="contact.html"style="color: white;">CONTACT</a></div>
+      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="index.html"style="color: white; text-decoration: none">HOME</a></div>
+      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="portfolio.html"style="color: white; text-decoration: none">PORTFOLIO</a></div>
+      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="services.html"style="color: white; text-decoration: none">SERVICES</a></div>
+      <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="contact.html"style="color: white; text-decoration: none">CONTACT</a></div>
     </div>
     <div style="width: 1920px; height: 1887px; left: 0px; top: 745px; position: absolute; background: black"></div>
     <div style="width: 1620px; height: 1927px; left: 152px; top: 229px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 125px; display: inline-flex">
       <div style="width: 1050px; height: 413px; position: relative">
-        <img style="width: 347px; height: 385px; left: 703px; top: 0px; position: absolute" src="https://via.placeholder.com/347x385" />
+        <img style="width: 347px; height: 385px; left: 703px; top: 0px; position: absolute" src="IMA3.jpeg" />
         <div style="width: 612px; height: 379px; left: 0px; top: 34px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
           <div style="width: 588px; height: 187px; position: relative">
             <div style="width: 572px; height: 88px; left: 0px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 72px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Home Page</div>
@@ -43,8 +76,8 @@
         <div style="width: 1052px; height: 30px; left: 0px; top: 57px; position: absolute; text-align: center"><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">“</span><span style="color: white; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">When words fail, let your voice be the bridge to understanding.</span><span style="color: #2FC8E8; font-size: 16px; font-family: Poppins; font-weight: 300; word-wrap: break-word">”</span></div>
       </div>
       <div style="width: 1059.17px; height: 854px; position: relative">
-        <img style="width: 348px; height: 349px; left: 711.17px; top: 0px; position: absolute" src="https://via.placeholder.com/348x349" />
-        <img style="width: 279px; height: 280px; left: 0px; top: 434px; position: absolute" src="https://via.placeholder.com/279x280" />
+        <img style="width: 348px; height: 349px; left: 711.17px; top: 0px; position: absolute" src="IMA2.jpeg" />
+        <img style="width: 279px; height: 280px; left: 0px; top: 434px; position: absolute" src="IMA1.jpeg" />
         <div style="width: 612px; height: 420px; left: 444.08px; top: 434px; position: absolute">
           <div style="width: 612px; height: 120px; left: 0px; top: 0px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word">While working as a radio producer I did my first voice over for a corporate video for a local car advertising system. Things start running from there and for many years I provided voice overs while still working in radio.</div>
           <div style="width: 612px; height: 280px; left: 0px; top: 140px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word">Since 2012 I have been a voice over artist full time. Every day is spent either in my studio – recording commercials, corporates, IVR, E-learning, narrations, documentaries, on-line videos and training programmes.<br/>Book me! Allow me to use my experience to bring your script to life and tell your story effectively. I know how to set up and record your script speedily, clearly and efficiently: I’ve been recording voice overs and running my professional recording studio since the early 2000s.</div>
@@ -67,7 +100,7 @@
       </div>
     </div>
   </div>
-      
+  
 </form>
 </body>
 </html>
