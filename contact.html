@@ -31,6 +31,13 @@
           transform: scaleX(1);
       }
     </style>
+    <script>
+      function copyEmail() {
+  var email = document.getElementById("email").innerText;
+  navigator.clipboard.writeText(email);
+  alert("Email copied to clipboard: " + email);
+}
+    </script>
 </head>
 <body style="background-color: black;">
     <div style="width: 1920px; height: 1120px; position: relative; background: black">
@@ -38,17 +45,17 @@
         <div style="width: 816px; height: 512px; left: 200px; top: 394px; position: absolute">
           <div style="left: 0px; top: 0px; position: absolute; opacity: 0.15; color: white; font-size: 96px; font-family: Poppins; font-weight: 900; word-wrap: break-word">Contacts</div>
           <div style="left: 0px; top: 60px; position: absolute"><span style="color: white; font-size: 42px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Let’s Talk</span><span style="color: #2FC8E8; font-size: 42px; font-family: Poppins; font-weight: 700; word-wrap: break-word">!</span></div>
-          <div style="left: 0px; top: 434px; position: absolute; color: white; font-size: 32px; font-family: Poppins; font-weight: 700; word-wrap: break-word">Email</div>
+          <div style="left: 0px; top: 434px; position: absolute; color: white; font-size: 32px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><p  id="email" onclick="copyEmail()" >recsoares@gmail.com</p></div>
           <div style="width: 816px; height: 297px; left: 0px; top: 131px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word">Introducing a portuguese voice that
              captivates and mesmerizes, my voice over skills are a symphony of versatility and depth. With a warm and soothing tone, I effortlessly breathe life into characters, narratives, and concepts, transporting
               listeners to vivid worlds of imagination. Whether it's conveying a sense of authority, evoking emotions, or simply enchanting with its melodic cadence, my voice has the power to paint pictures in the minds
                of those who hear it. With impeccable diction, impeccable timing, and a wide range of vocal expressions, I bring scripts to 
             life, leaving an indelible mark on every project I undertake. With my voice as the conduit, your message will resonate with clarity and leave a lasting impression.</div>
-          <div style="left: 0px; top: 482px; position: absolute; color: white; font-size: 20px; font-family: Poppins; font-weight: 300; word-wrap: break-word">recsoares@gmail.com</div>
+     
         </div>
 
         
-        <img style="width: 670px; height: 742px; left: 1080px; top: 200px; position: absolute" src="IM7.jpg" />
+        <img style="width: 670px; height: 742px; left: 1080px; top: 200px; position: absolute" src="IMA5.png" />
      
         <div style="left: 683.50px; top: 87px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 60px; display: inline-flex">
           <div style="color: white; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word"><a href="index.html"style="color: white;">HOME</a></div>
